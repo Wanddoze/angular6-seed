@@ -5,10 +5,10 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
     entry: {
-        'polyfills': './view/polyfills.ts',
-        'vendor': './view/vendor.ts',
-        'app': './view/main.ts',
-        'styles': './view/global.scss'
+        'polyfills': './src/polyfills.ts',
+        'vendor': './src/vendor.ts',
+        'app': './src/main.ts',
+        'styles': './src/global.scss'
     },
 
     resolve: {
@@ -51,12 +51,12 @@ module.exports = {
         }),
 
         new HtmlWebpackPlugin({
-            template: 'view/index.html'
+            template: 'src/index.html'
         }),
 
         new webpack.ContextReplacementPlugin(
             /angular(\\|\/)core(\\|\/)@angular/,
-            helpers.root('view'),
+            helpers.root('src'),
             {}
         )
     ]

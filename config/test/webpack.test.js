@@ -30,7 +30,7 @@ module.exports = {
     plugins: [
         new webpack.ContextReplacementPlugin(
             /angular(\\|\/)core(\\|\/)@angular/,
-            helpers.root('view'),
+            helpers.root('src'),
             {}
         )
     ]

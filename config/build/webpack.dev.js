@@ -7,7 +7,7 @@ const path = require('path');
 module.exports = webpackMerge(commonConfig, {
     devtool: 'cheap-module-eval-source-map',
     entry: {
-        'main': './view/main.ts',
+        'main': './src/main.ts',
     },
     
     output: {

@@ -8,5 +8,5 @@ body {
     height: 100%;
     padding: 0;
     position: fixed;
-    overflow-y: hidden;
+    overflow-y: hidden; /* don't show content that exceeds my height */
 }
